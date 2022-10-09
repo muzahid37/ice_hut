@@ -1,11 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import FeaturedProducts from './Components/Home/FeaturedProducts';
 function App() {
   return (
-    <div className="App">
-      
-      
+    <div className="">
+    <FeaturedProducts></FeaturedProducts> 
     </div>
   );
 }

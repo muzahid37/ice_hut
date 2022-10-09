@@ -1,0 +1,42 @@
+[
+    {   
+        "_id":"1",
+        "feraturedImg": "https://i.ibb.co/bzrYSMr/00747599816512-PI-ECom1.jpg",
+        "name": "Holiday Gift"
+    },
+    {
+        "_id":"2",
+        "feraturedImg": "https://i.ibb.co/2ZPXCSL/GCC-home-baking.jpg",
+        "name": "Holiday Gift"
+    },
+    {
+        "_id":"3",
+        "feraturedImg": "https://i.ibb.co/KKWfgkm/GCC-home-bar.jpg",
+        "name": "Holiday Gift"
+    },
+    {
+        "_id":"4",
+        "feraturedImg": "https://i.ibb.co/0Y8XRPV/GCC-home-basket.jpg",
+        "name": "Holiday Gift"
+    },
+    {
+        "_id":"5",
+        "feraturedImg": "https://i.ibb.co/g4GJjDt/GCC-home-giftbag.jpg",
+        "name": "Holiday Gift"
+    },
+    {
+        "_id":"6",
+        "feraturedImg": "https://i.ibb.co/ZHjcRP9/GCC-home-giftbox.jpg",
+        "name": "Holiday Gift"
+    },
+    {
+        "_id":"7",
+        "feraturedImg": "https://i.ibb.co/Wf51n19/home-products-bulk.jpg",
+        "name": "Holiday Gift"
+    },
+    {
+        "_id":"8",
+        "feraturedImg": "https://i.ibb.co/jfbgjBz/T10891-New-Custom-Mix-boxes-in-Blue-All-closed-1.jpg",
+        "name": "Holiday Gift"
+    }
+]
