@@ -1,6 +1,74 @@
-.FeaturedProduct-wraper{
-    width: 22% !important;
+.FeaturedProducts {
+  width: 90%;
+  margin: auto;
 }
-.FeaturedProduct-wraper img{
-    width: 100%;
+.FeaturedProducts .card {
+  display: flex;
+  text-align: center;
+}
+/* .slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.25;
+  color: black;
+} */
+.slick-prev:before,
+.slick-next:before {
+  opacity: 0.75;
+  color: black;
+}
+.FeaturedProducts .card img {
+  max-width: 100%;
+  margin: auto;
+}
+.FeaturedProducts .card h2,
+.exploreCard h2 {
+  color: green;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 3.5rem;
+  text-align: center;
+}
+.FeaturedProducts .card button {
+  margin: auto;
+  background: #036;
+  color: white;
+  font-size: 20px;
+  border-radius: 50px;
+  font-family: "Roboto", sans-serif;
+}
+.card button:hover {
+  background: #a98a27;
+}
+.ExploreContainer {
+  width: 95%;
+  background: #f2f2f2;
+  margin: auto;
+  margin-top: 42px;
+  padding: 40px;
+}
+.ExploreContainer .ExploreHeader {
+  font-size: 2.2rem;
+  line-height: 4.8rem;
+  letter-spacing: 0;
+  text-align: center;
+  color: #036;
+}
+.ExploreCard {
+  background-color: #f2f2f2;
+}
+.FeaturedProducts .card:hover img {
+}
+.exploreCard {
+}
+.exploreCard img {
+}
+.exploreCard h2 {
+}
+.exploreCard button {
+  margin: auto;
+  background: #036;
+  color: white;
+  font-size: 20px;
+  border-radius: 50px;
+  font-family: "Roboto", sans-serif;
 }
