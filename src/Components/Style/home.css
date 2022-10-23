@@ -72,3 +72,38 @@
   border-radius: 50px;
   font-family: "Roboto", sans-serif;
 }
+.ExploreStoreCard {
+  background: #ffff;
+  padding: 22px;
+}
+.ExploreStoreCardLeft {
+  margin: -77px 0px 0px -22px;
+}
+.ExploreStoreCardRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 38%;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 101px;
+}
+
+.ExploreStoreCardRight h2 {
+  font-size: 3.2rem;
+  line-height: 3.8rem;
+  color: #036;
+  letter-spacing: 0;
+  text-transform: none;
+  font-family: Snagmedium, Arial, Verdana, Helvetica, sans-serif;
+}
+.ExploreStoreCardRight article {
+  color: #003366;
+  cursor: pointer;
+  font-family: Snagmedium, Arial, Verdana, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.ExploreStoreCardBottom > .ExploreStoreCardLeft {
+  position: absolute;
+  right: 32px;
+}
