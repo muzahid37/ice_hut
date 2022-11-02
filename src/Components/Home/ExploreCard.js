@@ -14,7 +14,9 @@ const ExploreCard = ({ exploreCard }) => {
           <h2 className="card-title justify-center">{name}</h2>
 
           <div className="card-actions justify-center">
-            <button className="btn btn-outline btn-primary">SHOP NOW</button>
+            <button className="btn btn-primary btn-outline exploreCardButton">
+              SHOP NOW
+            </button>
           </div>
         </div>
       </div>

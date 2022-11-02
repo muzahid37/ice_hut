@@ -8,7 +8,8 @@ const ExploreButtom = () => {
         <div className="ExploreStoreCardLeft">
           <img
             className="ExploreStoreCardImage"
-            src="https://i.ibb.co/0Y8XRPV/GCC-home-basket.jpg"
+            src="
+            https://i.ibb.co/W2bMv4K/GCC-Explore-Classics-Table.jpg"
           ></img>
         </div>
         <div className="ExploreStoreCardRight">
@@ -17,7 +18,7 @@ const ExploreButtom = () => {
             Visit your local Ghirardelli Store for a complete sensory experience
             with chocolates, ice-cream fountains, and our in-store exclusives.
           </article>
-          <button className="btn btn-outline rounded">Button</button>
+          <button className="btn btn-outline btn-primary px-14">Button</button>
         </div>
       </div>
       <div className="ExploreStoreCard ExploreStoreCardBottom flex">
@@ -27,12 +28,12 @@ const ExploreButtom = () => {
             Visit your local Ghirardelli Store for a complete sensory experience
             with chocolates, ice-cream fountains, and our in-store exclusives.
           </article>
-          <button className="btn btn-outline rounded">Button</button>
+          <button className="btn btn-outline btn-primary px-14 ">Button</button>
         </div>
         <div className="ExploreStoreCardLeft">
           <img
             className="ExploreStoreCardImage"
-            src="https://i.ibb.co/0Y8XRPV/GCC-home-basket.jpg"
+            src=" https://i.ibb.co/W2bMv4K/GCC-Explore-Classics-Table.jpg"
           ></img>
         </div>
       </div>

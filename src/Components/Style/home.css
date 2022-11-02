@@ -6,6 +6,10 @@
   display: flex;
   text-align: center;
 }
+.FeaturedProducts .card:hover img {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
 /* .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before {
   opacity: 0.25;
@@ -13,8 +17,30 @@
 } */
 .slick-prev:before,
 .slick-next:before {
-  opacity: 0.75;
-  color: black;
+  /* opacity: 0.75; */
+  /* color: black; */
+}
+.slick-prev,
+.slick-next {
+  font-size: 20px;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+}
+.slick-prev {
+  left: -5%;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px !important;
+  background: #8d7249;
+  box-shadow: 0 10px 9px 0 rgb(0 0 0 / 20%);
+  border-radius: 52%;
+  z-index: 36;
 }
 .FeaturedProducts .card img {
   max-width: 100%;
@@ -35,9 +61,11 @@
   font-size: 20px;
   border-radius: 50px;
   font-family: "Roboto", sans-serif;
+  transition: 0.3s;
 }
 .card button:hover {
   background: #a98a27;
+  color: #fff !important;
 }
 .ExploreContainer {
   width: 95%;
@@ -64,26 +92,35 @@
 }
 .exploreCard h2 {
 }
-.exploreCard button {
+.exploreCardButton,
+.ExploreStoreCardRight button {
   margin: auto;
-  background: #036;
   color: white;
   font-size: 20px;
   border-radius: 50px;
   font-family: "Roboto", sans-serif;
+  transition: 0.3s;
+}
+.exploreCardButton:hover {
+  background: #a98a27 !important;
+  color: #fff !important;
+  border: none !important;
 }
 .ExploreStoreCard {
   background: #ffff;
   padding: 22px;
+  padding-bottom: 134px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .ExploreStoreCardLeft {
-  margin: -77px 0px 0px -22px;
+  margin: -77px 0px 0px -61px;
 }
 .ExploreStoreCardRight {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 38%;
+  width: 70%;
   flex-wrap: wrap;
   align-items: center;
   margin-left: 101px;
@@ -101,7 +138,8 @@
   color: #003366;
   cursor: pointer;
   font-family: Snagmedium, Arial, Verdana, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 14px;
+  margin-bottom: 30px;
 }
 .ExploreStoreCardBottom > .ExploreStoreCardLeft {
   position: absolute;

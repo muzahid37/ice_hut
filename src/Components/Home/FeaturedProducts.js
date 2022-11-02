@@ -27,9 +27,13 @@ const FeaturedProducts = () => {
       <Slider {...settings}>
         {FeaturedProducts.map((featuredProduct) => (
           <div className="card">
-            <img src={featuredProduct.feraturedImg} />
+            <div className="overflow-hidden">
+              {" "}
+              <img src={featuredProduct.feraturedImg} />
+            </div>
+
             <h2>{featuredProduct.name}</h2>
-            <button className="btn btn-accent">SHOP NOW</button>
+            <button className="btn btn-primary">SHOP NOW</button>
           </div>
         ))}
       </Slider>
