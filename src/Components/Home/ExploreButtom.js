@@ -8,8 +8,7 @@ const ExploreButtom = () => {
         <div className="ExploreStoreCardLeft">
           <img
             className="ExploreStoreCardImage"
-            src="
-            https://i.ibb.co/W2bMv4K/GCC-Explore-Classics-Table.jpg"
+            src="https://i.ibb.co/h1pbXy8/home-depts-rr.jpg"
           ></img>
         </div>
         <div className="ExploreStoreCardRight">
@@ -33,7 +32,8 @@ const ExploreButtom = () => {
         <div className="ExploreStoreCardLeft">
           <img
             className="ExploreStoreCardImage"
-            src=" https://i.ibb.co/W2bMv4K/GCC-Explore-Classics-Table.jpg"
+            src="
+            https://i.ibb.co/h1pbXy8/home-depts-rr.jpg"
           ></img>
         </div>
       </div>

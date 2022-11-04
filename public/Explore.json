@@ -1,0 +1,42 @@
+[
+    {   
+        "_id":"1",
+        "feraturedImg": "https://i.ibb.co/LCMD0G8/GCC-Explore-Classics-Baking-Holiday.jpg",
+        "name": "Holiday Gift"
+    },
+    {
+        "_id":"2",
+        "feraturedImg": "https://i.ibb.co/NSHqP4V/GCC-Explore-Classics-Giftbags.jpg",
+        "name": "Holiday Gift"
+    },
+    {
+        "_id":"3",
+        "feraturedImg": "https://i.ibb.co/cJvrJMy/GCC-Explore-Classics-Intense-Dark.jpg",
+        "name": "Holiday Gift"
+    },
+    {
+        "_id":"4",
+        "feraturedImg": "https://i.ibb.co/my2rfBb/GCC-Explore-Classics-Table.jpg",
+        "name": "Holiday Gift"
+    },
+    {
+        "_id":"5",
+        "feraturedImg": "https://i.ibb.co/my2rfBb/GCC-Explore-Classics-Table.jpg",
+        "name": "Holiday Gift"
+    },
+    {
+        "_id":"6",
+        "feraturedImg": "https://i.ibb.co/ZHjcRP9/GCC-home-giftbox.jpg",
+        "name": "Holiday Gift"
+    },
+    {
+        "_id":"7",
+        "feraturedImg": "https://i.ibb.co/Wf51n19/home-products-bulk.jpg",
+        "name": "Holiday Gift"
+    },
+    {
+        "_id":"8",
+        "feraturedImg": "https://i.ibb.co/jfbgjBz/T10891-New-Custom-Mix-boxes-in-Blue-All-closed-1.jpg",
+        "name": "Holiday Gift"
+    }
+]

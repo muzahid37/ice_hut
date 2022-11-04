@@ -4,7 +4,7 @@ import ExploreCard from "./ExploreCard";
 const ExploreCards = () => {
   const [ExploreCards, setExploreCards] = useState([]);
   useEffect(() => {
-    fetch("FeaturedProducts.json")
+    fetch("Explore.json")
       .then((res) => res.json())
       .then((data) => setExploreCards(data));
   }, []);
