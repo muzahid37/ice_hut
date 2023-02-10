@@ -1,4 +1,5 @@
 import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
 const firebaseConfig = {
   apiKey: "AIzaSyCT1Rp2bJ5VT0PDp6CNfSS9-LYkMQtiE7k",
   authDomain: "icehut-50354.firebaseapp.com",
@@ -8,3 +9,5 @@ const firebaseConfig = {
   appId: "1:632440551564:web:0085917d2386d001bce3a9",
 };
 const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+export default auth;

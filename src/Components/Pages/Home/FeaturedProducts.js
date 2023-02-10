@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "../Style/home.css";
+import "../../Style/home.css";
 
 const FeaturedProducts = () => {
   const [FeaturedProducts, setFeaturedProducts] = useState([]);
@@ -23,7 +23,6 @@ const FeaturedProducts = () => {
   };
   return (
     <div className="FeaturedProducts">
-      <h2> Multiple items: {FeaturedProducts.length} </h2>
       <Slider {...settings}>
         {FeaturedProducts.map((featuredProduct) => (
           <div className="card">
@@ -32,8 +31,10 @@ const FeaturedProducts = () => {
               <img src={featuredProduct.feraturedImg} />
             </div>
 
-            <h2>{featuredProduct.name}</h2>
-            <button className="btn btn-primary">SHOP NOW</button>
+            <h2 className="text-base lg:text-3xl		">{featuredProduct.name}</h2>
+            <button className="btn btn-primary text-base lg:text-3xl">
+              SHOP NOW
+            </button>
           </div>
         ))}
       </Slider>

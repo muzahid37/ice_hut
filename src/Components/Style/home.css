@@ -55,7 +55,6 @@
 .FeaturedProducts .card h2,
 .exploreCard h2 {
   color: green;
-  font-size: 30px;
   font-weight: 800;
   line-height: 3.5rem;
   text-align: center;
@@ -64,7 +63,6 @@
   margin: auto;
   background: #036;
   color: white;
-  font-size: 20px;
   border-radius: 50px;
   font-family: "Roboto", sans-serif;
   transition: 0.3s;

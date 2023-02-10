@@ -1,5 +1,5 @@
 import React from "react";
-import "../Style/home.css";
+import "../../Style/home.css";
 
 const ExploreButtom = () => {
   return (

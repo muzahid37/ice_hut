@@ -1,7 +1,17 @@
 import React from "react";
-// import { SlUserFollow } from "react-icons/sl";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { SlLocationPin, SlUserFollow } from "react-icons/sl";
+import { Link, useLocation } from "react-router-dom";
+import auth from "../../../firebase.init";
+import { signOut } from "firebase/auth";
 
 const NavbarTop = () => {
+  const [user] = useAuthState(auth);
+  const { pathname } = useLocation();
+
+  const handleSignOut = () => {
+    signOut(auth);
+  };
   return (
     // https://i.ibb.co/rQ7xhVc/logo-ghirardelli-chocolate-mobile.png
     <div className="navbar bg-base-100">
@@ -10,17 +20,16 @@ const NavbarTop = () => {
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="currentColor"
+              className="inline-block w-5 h-5 stroke-current"
             >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
             </svg>
           </label>
           <ul
@@ -69,21 +78,41 @@ const NavbarTop = () => {
 
       <div className="navbar-end lg:navbar-start">
         {" "}
-        <img
-          className="btn btn-ghost normal-case text-xl"
-          src="https://i.ibb.co/yg3c67D/logo-ghirardelli-chocolate.png"
-        ></img>
+        <Link to="/">
+          {" "}
+          <img
+            className="btn btn-ghost normal-case text-xl"
+            src="https://i.ibb.co/yg3c67D/logo-ghirardelli-chocolate.png"
+          ></img>
+        </Link>
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
           <li>
-            <a>dasktop</a>
+            <a>
+              Your Location <SlLocationPin></SlLocationPin>
+            </a>
           </li>
           <li tabIndex={0}>
-            <a>dasktop</a>
+            <a></a>
           </li>
           <li>
-            <a>dasktop</a>
+            {user ? (
+              <button
+                type="button"
+                class="btn btn-primary btn-secondary "
+                onClick={handleSignOut}
+              >
+                <SlUserFollow />
+              </button>
+            ) : (
+              <Link as={Link} to="login">
+                <SlUserFollow />
+              </Link>
+            )}
+            {/* <Link to="/login">
+              <SlUserFollow />
+            </Link> */}
           </li>
         </ul>
       </div>
@@ -97,6 +126,27 @@ const NavbarTop = () => {
           </li>
         </ul>
       </div>
+      {pathname.includes("/dashboard") && (
+        <label
+          htmlFor="my-drawer-2"
+          className="btn drawer-button btn-ghost lg:hidden"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16M4 18h7"
+            />
+          </svg>
+        </label>
+      )}
     </div>
   );
 };

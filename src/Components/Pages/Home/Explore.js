@@ -1,6 +1,6 @@
 import React from "react";
 import ExploreCards from "./ExploreCards";
-import "../Style/home.css";
+import "../../Style/home.css";
 import ExploreButtom from "./ExploreButtom";
 
 const Explore = () => {
